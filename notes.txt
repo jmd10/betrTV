@@ -1,0 +1,10 @@
+TO-DO...
+- create git repository
+- push to git hub
+
+
+
+DID....
+- created django project (betrTV)
+- created venv (betr_env)
+- created README file
