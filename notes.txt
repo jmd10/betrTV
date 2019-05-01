@@ -1,10 +1,17 @@
 TO-DO...
-- create git repository
-- push to git hub
+- commit changes
+- push changes to github
+- close down for night...
+- Start at page 412 to begin creating the actual webpage
+- determine method for keeping the admin folder somewhere inaccessible to others
 
 
 
 DID....
+- created django superuser (betr_admin... see admin docx in betrTV folder)
+- created django app (betrTV_app)
+- pushed 'initial commit' to git hub
+- created git repository with 'initial commit'
 - created django project (betrTV)
 - created venv (betr_env)
 - created README file
