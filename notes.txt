@@ -1,15 +1,14 @@
 TO-DO...
-- start at chapter 19, "User accounts".
-  - go through to understand, even if it doesn't seem directly applicable. I
-    need to learn and understand the uses of the models. That is the key to the
-    next evolution of this product such that I can use a database to store users'
-    preferences and simply to better understand so I can build future django apps.
-    
+-deploy to Heroku
+
+
 - determine method for keeping the admin folder somewhere inaccessible to others
 
 
 
 COMPLETED....
+- load bootstrap3 and add to settings.py (pg 456/7)
+- committed to git... pushed to githb
 - CHECKED POSITIVE FOR CORRECT OPERATION THROUGH LOCAL HOST & ONLINE
 - created 'index.html' file in new folder ..betrTV_app\templates\betrTV_app
 - created 'index' function in 'views' file for home page
