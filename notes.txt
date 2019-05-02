@@ -1,15 +1,14 @@
 TO-DO...
--deploy to Heroku
-    - check to see if changes are still working on the local server
-
-- check 
-
+- change Heroku name
+- send to Brian 
+- call it a day
 
 - determine method for keeping the admin folder somewhere inaccessible to others
 
 
 
 COMPLETED....
+- deployed on Heroku. App opened correctly.
 - made all changes leading up to deployment on Heroku (through pg 473)
 - requirements and runtime txt docs for Heroku
 - installed packages in prep for Heroku
