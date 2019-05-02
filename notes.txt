@@ -1,5 +1,6 @@
 TO-DO...
 -deploy to Heroku
+    - check to see if changes are still working on the local server
 
 
 - determine method for keeping the admin folder somewhere inaccessible to others
@@ -7,6 +8,9 @@ TO-DO...
 
 
 COMPLETED....
+-
+- requirements and runtime txt docs for Heroku
+- installed packages in prep for Heroku
 - load bootstrap3 and add to settings.py (pg 456/7)
 - committed to git... pushed to githb
 - CHECKED POSITIVE FOR CORRECT OPERATION THROUGH LOCAL HOST & ONLINE

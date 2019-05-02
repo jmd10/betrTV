@@ -1,0 +1,4 @@
+This file ensures that betrTV/betrTV/static/ will be added to the project
+upon launch on Heroku.
+
+Django will collect static files and place them in the ../static/ folder
