@@ -24,7 +24,7 @@ videos = [
 def video_source():
     ''' returns unique video identifier (last 11 chars)'''
 
-    num = random.randint(0, len(videos))
+    num = random.randint(0, len(videos)-1)
     source = videos[num]
     video_id = source[-11:]
 
