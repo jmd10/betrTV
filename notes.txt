@@ -1,9 +1,17 @@
 TO-DO...
 
-everything checks out except when I try to runserver, it tells me there is no
-module named "sources". Not sure what the fuck is up with that. Can either find
-the issue, or just move the code over from 'sources' to 'views', but this seems
-like something I should know how to do. 
+1. next step is to clean up that file by using the 'sources.py' module. This is
+  something I need to learn and understand and get to work (though, 'need' is a
+  strong word) (learning lesson... modules)
+
+2. scrape the web for videos, create a files with all of them.
+
+3. change the system such that a random number between 0 and the len of the list
+    each day, and that choses the video.
+
+4. play with the cursor control to autoplay the video as soon as someone opens
+    the website.
+
 
 
 - determine method for keeping the admin folder somewhere inaccessible to others
@@ -11,6 +19,7 @@ like something I should know how to do.
 
 
 COMPLETED....
+- I moved all of the code into the 'view.py' file and got it running.
 - got the videos lined up in the file 'sources'
 - identified and got coding for 10 Impact Theory videos
 - I created all html code necessary within views.py (checked out with one video)

@@ -1,36 +1,16 @@
 from django.shortcuts import render
 from django.http import HttpResponse
 from datetime import date
+from . source import video_source
 
-''' returns a dict of unique video identifiers (last 11 chars)'''
+# The intention here is to have the list of videos in "sources.py", and to have that list
+    # processed such that id is provided here by calling the function. That will minimize
+    # the burden of pulling the whole list here for processing. It should be done within the function
 
-original = ["https://www.youtube.com/embed/jeOWjeY7XOM",
-    "https://www.youtube.com/embed/MRuJCLbOAeA",
-    "https://www.youtube.com/embed/h-F0uJC10Js",
-    "https://www.youtube.com/embed/Lo3769VtgHM",
-    "https://www.youtube.com/embed/dIM7E8e9JKY",
-    "https://www.youtube.com/embed/crjXflAi8mg",
-    "https://www.youtube.com/embed/k7iq2Z2D1Zs",
-    "https://www.youtube.com/embed/GXoErccq0vw",
-    "https://www.youtube.com/embed/7Jye1ZwgxaM",
-    "https://www.youtube.com/embed/1-go0xQZ89w",
-    ]
 
-sources = []
-# strip out all except the unique source code
-for i in range(len(original)):
-    source = original[i]
-    source = source[30:]
-    sources.append(source)
 
-# Checked out... print(sources)
-
-# create day of week to pull video
-day = date.today()
-num = str(day)[9]
-
-# pull source from list by using 'num' from 'day'
-source = sources[int(num)]
+# pull random video from video_source function in 'source.py'. Just need the last 11 digits...
+source = video_source()
 
 def index(request):
     ''' The home page for betrTV_app '''
