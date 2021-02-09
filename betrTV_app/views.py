@@ -20,10 +20,13 @@ def index(request):
         + frameborder="0" allow="accelerometer; autoplay; encrypted-media; \
         + gyroscope; picture-in-picture" allowfullscreen' %source
 
+    analytics = "<!-- Global site tag (gtag.js) - Google Analytics --> \
+        <script async src='https://www.googletagmanager.com/gtag/js?id=G-5S9053QREN'></script> \
+        <script>window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);} gtag('js', new Date());gtag('config', 'G-5S9053QREN');</script>"
 
-    html = '<html><body><link href="https://fonts.googleapis.com/css?family=Gugi"\
+    html = '<html><head><title>BetrTV</title>%s<head/><body><link href="https://fonts.googleapis.com/css?family=Gugi"\
         + rel="stylesheet"><h1 style="color: grey; font-family: Gugi; font-size: \
         + 20px;">BetrTV... Empowerment on Demand</h1>\
-        <iframe %s></iframe></body></html>' %video
+        <iframe %s></iframe></body></html>' %(analytics, video)
 
     return HttpResponse(html)

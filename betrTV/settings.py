@@ -60,7 +60,7 @@ ROOT_URLCONF = 'betrTV.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [os.path.join(BASE_DIR, 'betrTV_app/templates')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
