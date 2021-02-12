@@ -1,4 +1,5 @@
 import random
+import datetime
 
 # This page is to act as a repository for all of the youtube videos to rotate through
     # and to feed the list to views.py for processing
@@ -18,13 +19,21 @@ videos = [
     "https://www.youtube.com/embed/bIacYjZHcs4",
     "https://www.youtube.com/embed/xWMjEBkgAy8",
     "https://www.youtube.com/embed/78I9dTB9vqM",
+    "https://www.youtube.com/embed/hMgMASVsA9Y",
+    "https://www.youtube.com/embed/jeOWjeY7XOM",
+    "https://www.youtube.com/embed/qlBV_CDvuYs",
     ]
+
+day = int(datetime.datetime.now().strftime("%d"))
 
 # create function to feed a random video ID to the views page
 def video_source():
     ''' returns unique video identifier (last 11 chars)'''
 
-    num = random.randint(0, len(videos)-1)
+    if day <= len(videos):
+        num = day-1
+    else:
+        num = 31-day
     source = videos[num]
     video_id = source[-11:]
 
